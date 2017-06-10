@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<final.name>energymarket</final.name>
 	</properties>
 
 	<dependencies>
@@ -82,6 +83,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>${final.name}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

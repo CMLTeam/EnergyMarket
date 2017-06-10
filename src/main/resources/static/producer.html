@@ -18,15 +18,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Споживач <b>Пупкін Іван Петрович</b></a>
+            <a class="navbar-brand" href="#">Виробник <b>Сонячна електростанція №1</b></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Кабінет Споживача</a></li>
-                <li><a href="#">Активні контракти</a></li>
-                <li><a href="#">Архів контрактів</a></li>
+                <li class="active"><a href="#">Кабінет Виробника</a></li>
+                <li><a href="#">Активні пропозиції</a></li>
+                <li><a href="#">Архів пропозицій</a></li>
                 <li><a href="#">Ринок</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -34,27 +34,23 @@
 </nav>
 
 <div style="width: 800px; margin-left: -400px; position: relative; left: 50%;">
-    <h3 style="padding: 30px 0 30px 100px">Новий місячний контракт на споживання електроенергії</h3>
+    <h3 style="padding: 30px 0 30px 100px">Нова пропрозиція електроенергії</h3>
     <form class="form-horizontal" autocomplete="off">
         <hr/>
         <div class="form-group">
-            <label for="producer" class="col-sm-5 control-label text-left">Оберіть постачальника</label>
+            <label for="producer" class="col-sm-5 control-label text-left">Оберіть тип електроенергії для пропозиції</label>
             <div class="col-sm-7">
                 <select id="producer" class="form-control">
-                    <option value="">Соняшна електростанція №1</option>
-                    <option value="">Соняшна електростанція №2</option>
-                    <option value="">Соняшна електростанція №3</option>
-                    <option value="">Соняшна електростанція №4</option>
-                    <option value="">Атомна електростанція №1</option>
-                    <option value="">Атомна електростанція №2</option>
-                    <option value="">Атомна електростанція №3</option>
-                    <option value="">Атомна електростанція №4</option>
+                    <option value="">Сонячна</option>
+                    <option value="">Атомна</option>
+                    <option value="">Теплова</option>
+                    <option value="">Гідро</option>
                 </select>
             </div>
         </div>
         <hr/>
         <div class="form-group">
-            <label for="month" class="col-sm-5 control-label">Оберіть період контракту</label>
+            <label for="month" class="col-sm-5 control-label">Оберіть період пропрозиції</label>
             <div class="col-sm-7">
                 <select id="month" class="form-control">
                     <option value="">січень, 2017</option>
@@ -74,62 +70,28 @@
         </div>
         <hr/>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-5 control-label">Оберіть місячний обʼєм електроенергії в
-                наступному місяці</label>
+            <label for="inputPassword3" class="col-sm-5 control-label">Оберіть обʼєм пропозиції</label>
             <div class="col-sm-7">
                 <div class="input-group">
                     <input type="text" class="form-control" id="inputPassword3" placeholder="">
-                    <div class="input-group-addon">КВт * год</div>
+                    <div class="input-group-addon">кВ * г</div>
                 </div>
             </div>
         </div>
         <hr/>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-5 control-label">Оберіть можливе відхилення в +-КВ*год</label>
+            <label for="inputPassword3" class="col-sm-5 control-label">Зазначте вартість електроенергії</label>
             <div class="col-sm-7">
                 <div class="input-group">
                     <input type="text" class="form-control" id="inputPassword3" placeholder="">
-                    <div class="input-group-addon">КВт * год</div>
-                </div>
-            </div>
-        </div>
-        <hr/>
-        <div class="form-group">
-            <label for="inputPassword3" class="col-sm-5 control-label">Авансовий платіж за обраний місячний
-                обʼєм</label>
-            <div class="col-sm-7">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
-                    <div class="input-group-addon">грн</div>
-                </div>
-            </div>
-        </div>
-        <hr/>
-        <div class="form-group">
-            <label for="inputPassword3" class="col-sm-5 control-label">Вартість КВ*год в межах законтрактованого
-                відхилення становить</label>
-            <div class="col-sm-7">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="" value="2.00">
-                    <div class="input-group-addon">грн</div>
-                </div>
-            </div>
-        </div>
-        <hr/>
-        <div class="form-group">
-            <label for="inputPassword3" class="col-sm-5 control-label">Вартість КВ*год поза межами законтрактованого
-                відхилення становить</label>
-            <div class="col-sm-7">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="" value="2.50">
-                    <div class="input-group-addon">грн</div>
+                    <div class="input-group-addon">грн/(кВ * г)</div>
                 </div>
             </div>
         </div>
         <hr/>
         <div class="form-group">
             <div class="col-sm-offset-5 col-sm-8">
-                <button type="submit" class="btn btn-lg btn-success">Підписати контракт</button>
+                <button type="submit" class="btn btn-lg btn-success">Сформувати пропозицію</button>
             </div>
         </div>
     </form>

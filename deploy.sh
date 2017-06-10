@@ -8,13 +8,14 @@ echo
 echo "BUILD..."
 echo
 
-mvn clean package -DskipTests
+#mvn clean package -DskipTests
 
 echo
 echo "DEPLOY..."
 echo
 
-scp $APP.conf target/$APP.jar $USER@$SERV:~/
+#scp $APP.conf target/$APP.jar $USER@$SERV:~/
+scp target/$APP.jar $USER@$SERV:~/
 
 echo
 echo "RESTART..."

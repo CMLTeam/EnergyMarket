@@ -1,5 +1,9 @@
 pragma solidity ^0.4.11;
 
+//
+// Smart contract for simplifying the P2P contracts
+// between energy consumers & producers
+//
 contract EnergyMarketContract {
     mapping(address => uint64) consumersBalances;
 
@@ -16,6 +20,7 @@ contract EnergyMarketContract {
     function EnergyMarketContract() {
     }
 
+    // refill with Eth
     function refillConsumerBalance() payable {
 
     }

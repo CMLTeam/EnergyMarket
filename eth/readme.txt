@@ -36,6 +36,9 @@ https://theethereum.wiki/w/index.php/ERC20_Token_Standard
 Real Estate Use Case on Azure
 https://github.com/bashalex/devcon
 
+Dive into Ethereum:
+https://habrahabr.ru/post/327236/
+
 Run MetaCoin example:
 to get balance:
 MetaCoin.deployed().then(m=>m.getBalance.call('0xed8abc31bc3b8d9d2105b76402011f786d9576c7').then(console.log))

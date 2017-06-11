@@ -37,19 +37,6 @@ contract EnergyMarketContract {
         owner = msg.sender;
     }
 
-    // refill with Eth
-    function refillConsumerBalance() payable returns (bool sucess) {
-        address consumer = msg.sender;
-
-        if(owner.send(msg.value)) {
-            consumersBalances[consumer] += CONVERSION_RATE * msg.value;
-            return true;
-        } else {
-            ErrorLog(consumer, "Can't refill");
-            return false;
-        }
-    }
-
     function addEnergyProposal(uint8 month, uint128 volume, uint32 price) returns (bool success) {
         address producer = msg.sender;
 
@@ -98,7 +85,9 @@ contract EnergyMarketContract {
         return true;
     }
 
-    // Executed at the month end
+    // - Executed at the end of month
+    // - Charges the consumer's balance based on real usage
+    // - Pays producer in Eth for consumed amount
     function closeMonth(address consumer, uint8 month, uint128 realConsumedVolume) payable returns (bool sucess) {
         MonthEnergyCommitment memory commitment = commitsByConsumer[consumer][month];
         address producer = commitment.producer;
@@ -121,6 +110,19 @@ contract EnergyMarketContract {
             return true;
         } else {
             ErrorLog(producer, "Can't process transaction");
+            return false;
+        }
+    }
+
+    // Refill with Eth
+    function refillConsumerBalance() payable returns (bool sucess) {
+        address consumer = msg.sender;
+
+        if(owner.send(msg.value)) {
+            consumersBalances[consumer] += CONVERSION_RATE * msg.value;
+            return true;
+        } else {
+            ErrorLog(consumer, "Can't refill");
             return false;
         }
     }

@@ -23,18 +23,18 @@ https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options
 Azure Quickstart Templates:
 https://github.com/Azure/azure-quickstart-templates/tree/master/go-ethereum-on-ubuntu
 
-
 MS BlockChain Intensive resources:
 https://github.com/Jiycefer/BlockchainIntensive2017/blob/master/README.md
-
 
 Youtube Video:
 https://www.youtube.com/watch?v=8jI1TuEaTro
 https://www.youtube.com/watch?v=3-XPBtAfcqo
 
-
 ERC20 Ethereum Token Standart
 https://theethereum.wiki/w/index.php/ERC20_Token_Standard
+
+Real Estate Use Case on Azure
+https://github.com/bashalex/devcon
 
 Run MetaCoin example:
 to get balance:

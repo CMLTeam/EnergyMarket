@@ -120,8 +120,8 @@ contract EnergyMarketContract {
         if (producer.send(consumerToPay / CONVERSION_RATE)) {
             return true;
         } else {
-            return false;
             ErrorLog(producer, "Can't process transaction");
+            return false;
         }
     }
 }

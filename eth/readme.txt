@@ -33,6 +33,8 @@ https://www.youtube.com/watch?v=8jI1TuEaTro
 https://www.youtube.com/watch?v=3-XPBtAfcqo
 
 
+ERC20 Ethereum Token Standart
+https://theethereum.wiki/w/index.php/ERC20_Token_Standard
 
 Run MetaCoin example:
 to get balance:

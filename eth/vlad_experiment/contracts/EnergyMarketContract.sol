@@ -1,6 +1,7 @@
 pragma solidity ^0.4.11;
 
 contract EnergyMarketContract {
+    mapping(address => uint64) consumersBalances;
 
     mapping(address => mapping(uint8 => MonthEnergyProposal)) proposalsByProducer;
 
@@ -13,6 +14,10 @@ contract EnergyMarketContract {
     }
 
     function EnergyMarketContract() {
+    }
+
+    function refillConsumerBalance() payable {
+
     }
 
     function addEnergyProposal(uint8 month, uint128 volume, uint32 price) returns (bool success) {
